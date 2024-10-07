@@ -74,6 +74,12 @@ variable "ssh_user" {
   default     = "ubuntu"  # Change as per your OS
 }
 
+variable "subnet_cidr" {
+  description = "CIDR block for the subnet"
+  type        = string
+  default     = "10.0.0.0/24"  # Optional: You can provide a default
+}
+
 variable "vm_username" {
   description = "The username for the VM"
   type        = string
